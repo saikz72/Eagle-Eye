@@ -20,7 +20,7 @@ const LoginForm = () => {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        console.log(userCredential.user);
+        //console.log(userCredential.user);
       })
       .catch((error) => {
         console.log(error);
@@ -30,7 +30,7 @@ const LoginForm = () => {
   const signUp = (e) => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        console.log(userCredential.user);
+        //console.log(userCredential.user);
       })
       .catch((error) => console.log(error));
   };
