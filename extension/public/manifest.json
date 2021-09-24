@@ -3,12 +3,17 @@
   "name": "Eagle Eye",
   "version": "1.0.0",
   "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"],
+    "persistence" : false
+  },
   "permissions": [
     "storage",
     "tabs",
     "activeTab",
     "http://*/*", 
-    "https://*/*"
+    "https://*/*",
+    "alarms"
   ],
   "browser_action": {
     "default_popup": "index.html",
