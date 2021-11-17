@@ -57,15 +57,10 @@ const LoginForm = () => {
             });
     };
 
-    return ( <
-        div className = "login" >
-        <
-        div className = "login__container" >
-        <
-        h1 > Sign in < /h1>{' '} <
-        form >
-        <
-        h5 > E - mail < /h5> <input value={email} onChange={(event) => setEmail(event.target.value)} type="email" / >
+    return ( <div className = "login" >
+        <div className = "login__container" >
+        <h1 > Sign in </h1>{' '} <form >
+        <h5 > E - mail < /h5> <input value={email} onChange={(event) => setEmail(event.target.value)} type="email" / >
         <
         h5 > Password < /h5>{' '} <
         input value = { password }
@@ -90,8 +85,7 @@ const LoginForm = () => {
         className = "login__googleSignUp" >
         Sign up with google { ' ' } <
         /button>{' '} <
-        /div>{' '} <
-        /div>
+        /div>{' '} </div>
     );
 };
 

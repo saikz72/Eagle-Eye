@@ -22,15 +22,15 @@ router.post('/register', async (req: Request, res: Response, next: NextFunction)
     email: email,
     password: password,
   });
+  //do validation and sent error code
+
   try {
     const savedUser = await user.save();
-    console.log(savedUser);
     res.send(savedUser);
   } catch (error) {
     console.log(error);
     res.status(400).send(error);
   }
-  //do validation and sent error code
 });
 
 export default router;
